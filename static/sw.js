@@ -1,20 +1,9 @@
-importScripts('/dynamic/dynamic.config.js');
-importScripts('/dynamic/dynamic.worker.js');
+importScripts('./uv/uv.sw.js');
 
-const dynamic = new Dynamic();
+const sw = new UVServiceWorker();
 
-self.dynamic = dynamic;
-
-self.addEventListener('fetch',
-    event => {
-        event.respondWith(
-            (async function() {
-                if (await dynamic.route(event)) {
-                    return await dynamic.fetch(event);
-                }
-
-                return await fetch(event.request);
-            })()
-        );
-    }
+self.addEventListener('fetch', event =>
+    event.respondWith(
+        sw.fetch(event)
+    )
 );

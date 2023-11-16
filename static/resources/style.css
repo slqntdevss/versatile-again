@@ -30,8 +30,8 @@ body {
   z-index: 1;
 }
 h1 {
+  font-family: "psbold";
   font-size: 72px;
-  font-weight: 700;
   margin: 0 0 -43px 0;
   text-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
   pointer-events: none;
@@ -45,9 +45,17 @@ h1 {
   text-align: center;
 }
 .btn {
+  border: #ffffff;
+  color: #ffffff;
+  position: absolute;
   border-radius: 15px;
   border-style: solid;
-  width: 100px;
+  top: 65%;
+  width: auto;
+  margin: auto;
+  font-family: "psreg";
+  font-size: 16px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
   height: 25px;
   position: relative;
   cursor: pointer;
@@ -80,7 +88,7 @@ form {
   cursor: pointer;
   text-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
 }
-input[name="url"] {
+.uvform {
   top: 2%;
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
   position: absolute;
@@ -94,41 +102,24 @@ input[name="url"] {
   margin: 0 0 16px 0;
   font-family: "psreg";
   padding: 16px;
-  height: 16px;
+  height: 48px;
   text-align: center;
   width: 50%;
   outline: transparent;
 }
-input[name="url"]:placeholder {
+.uvform:placeholder {
   color: #ffffff;
 }
-input[name="url"]:hover {
+.uvform:hover {
   transition-timing-function: ease-out;
   transition: 1.5s;
   width: 57.5%;
 }
-input[name="url"]:focus {
+.uvform:focus {
   transition-timing-function: ease-out;
   transition: 1.5s;
   width: 65%;
 }
-input[type="submit"] {
-  background-color: #daff46;
-  color: black;
-  border: none;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: background-color 0.2s ease-in-out;
-  width: 50%;
-}
-input[type="submit"]:hover {
-  background-color: #00c853;
-  cursor: pointer;
-}
-
 svg {
   position: absolute;
   top: 0;
