@@ -10,16 +10,15 @@ const app = express();
  
 app.use(express.static('static'))
 
-server.on("request", (req, res) => {
+app.use((req, res, next) => {
   if (bare.shouldRoute(req)) {
     bare.routeRequest(req, res);
   } else {
-    serve.serve(req, res);
+    // Continue to the next middleware (express.static)
+    next();
   }
 });
-app.use((req, res, next) => {
-  res.status(404).send("go back you got uhhh 404 thing (cant find what you are looking for sowwy)")
-})
+
 server.on("upgrade", (req, socket, head) => {
   if (bare.shouldRoute(req, socket, head)) {
     bare.routeUpgrade(req, socket, head);
