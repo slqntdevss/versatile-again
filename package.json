@@ -4,9 +4,9 @@
     "bare-server-node": "github:tomphttp/bare-server-node",
     "node-static": "^0.7.11"
   },
-  "name": "uv-app",
+  "name": "versatile",
   "version": "1.0.0",
-  "description": "Ultraviolet instance",
+  "description": "its crazy",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
