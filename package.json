@@ -2,7 +2,7 @@
   "dependencies": {
     "@tomphttp/bare-server-node": "^1.0.2-beta-readme2",
     "bare-server-node": "github:tomphttp/bare-server-node",
-    "node-static": "^0.7.11"
+    "express-static": "^1.2.6"
   },
   "name": "versatile",
   "version": "1.0.0",
