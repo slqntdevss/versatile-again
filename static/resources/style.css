@@ -70,7 +70,7 @@ form {
   width: 48px;
   height: 48px;
   top: 2%;
-  left: 0;
+  left: 1%;
 }
 .logo:hover {
   cursor: pointer;
@@ -112,12 +112,12 @@ form {
 }
 .uvform:hover {
   transition-timing-function: ease-out;
-  transition: 1.5s;
+  transition: 1s;
   width: 57.5%;
 }
 .uvform:focus {
   transition-timing-function: ease-out;
-  transition: 1.5s;
+  transition: 1s;
   width: 65%;
 }
 svg {
