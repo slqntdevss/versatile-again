@@ -8,14 +8,13 @@ const server = http.createServer();
 
 const app = express();
  
-app.use(express.static('static'))
+app.use(express.static('static/'))
 
-app.use((req, res, next) => {
+server.on("request", (req, res) => {
   if (bare.shouldRoute(req)) {
     bare.routeRequest(req, res);
   } else {
-    // Continue to the next middleware (express.static)
-    next();
+    app(req, res);
   }
 });
 
