@@ -1,21 +1,17 @@
 {
-  "dependencies": {
-    "@tomphttp/bare-server-node": "^1.0.2-beta-readme2",
-    "bare-server-node": "github:tomphttp/bare-server-node",
-    "express": "^4.18.2",
-    "express-static": "^1.2.6"
-  },
   "name": "versatile",
-  "version": "1.0.0",
-  "description": "its crazy",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ."
-  },
-  "keywords": [
-    "proxy"
+  "main": "lib/index.js",
+  "version": "1.0.3",
+  "type": "module",
+  "files": [
+    "public",
+    "lib"
   ],
-  "author": "",
-  "license": "GPL-3.0-or-later"
+  "peerDependencies": {
+    "@titaniumnetwork-dev/ultraviolet": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "prettier": "^2.7.1"
+  }
 }
