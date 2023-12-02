@@ -1,6 +1,6 @@
 {
   "name": "versatile",
-  "main": "lib/index.js",
+  "main": "libs/index.js",
   "version": "1.0.3",
   "type": "module",
   "files": [
